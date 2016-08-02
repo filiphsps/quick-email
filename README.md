@@ -8,5 +8,5 @@ require('quick-email').init(user, password, host, port, ssl);
 
 Send an email
 ```javascript
-reuqire('quick-email').sendEmail(path, subject, from, to, variables, callback);
+reuqire('quick-email').sendEmail(path, subject, sender, to, variables, callback);
 ```

@@ -12,7 +12,7 @@ exports.init = function (user, password, host, port, ssl) {
 		ssl: ssl
 	});
 };
-exports.sendEmail = function (path, subject, from, to, variables, callback) {
+exports.sendEmail = function (path, subject, sender, to, variables, callback) {
     //Non-blocking
     process.nextTick(function() {
 		
@@ -31,7 +31,7 @@ exports.sendEmail = function (path, subject, from, to, variables, callback) {
             }
             
             let email = {
-                from: from,
+                from: sender,
                 text: subject,
                 to: to,
                 subject: subject,

@@ -1,6 +1,6 @@
 {
   "name": "quick-email",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A quick way to send emails from templates.",
   "main": "index.js",
   "scripts": {
